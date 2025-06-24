@@ -1,0 +1,95 @@
+.QuestianSectionMainContainer {
+    .section {
+        // padding: 13rem;
+
+        .main-sqare {
+            width: 100%;
+            // height: 600px;
+            background: #80a9a92e;
+            display: flex;
+            align-items: center;
+
+            .left {
+                padding: 4rem 0 4rem 0;
+                width: 50%;
+
+                img {
+                    width: 70%;
+                    margin-left: 6rem;
+                    height: 0; // Start with 0 height
+                    transition: height 1.2s ease-in-out;
+                    object-fit: cover;
+
+                    &.animate-height {
+                        height: 700px; // Animate to full height
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                padding: 4rem 4rem 4rem 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .quastian-tag {
+                    background-color: #A0728D;
+                    width: fit-content;
+                    padding: 4px 20px;
+                    color: white;
+                    font-family: "Josefin Sans", sans-serif;
+                    border-radius: 9px 0 9px 0;
+                }
+
+                .questian {
+                    font-family: "Josefin Sans", sans-serif;
+                    font-weight: 600;
+                    font-size: 35px;
+                    line-height: 40px;
+                    color: #555555;
+                    margin-top: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 2px solid #a0728d50;
+                    width: 70%;
+                    margin-top: 2rem;
+                }
+
+                .ansewer-section {
+                    margin-top: 1rem;
+
+                    .label {
+                        font-family: "Josefin Sans", sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 30px;
+                        color: #a0728db8;
+                        padding-bottom: 1rem;
+                    }
+
+                    .answer {
+                        font-family: "Josefin Sans", sans-serif;
+                        font-weight: 400;
+                        font-size: 45px;
+                        line-height: 30px;
+                        color: #a0728d;
+                        padding-bottom: 1rem;
+                        margin-top: 1rem;
+                    }
+                }
+
+                .explanation-conatiner {
+                    width: 90%;
+
+                    .explanation-item {
+                        font-family: "Red Hat Display", sans-serif;
+                        color: #555555;
+                        margin-bottom: 1rem;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

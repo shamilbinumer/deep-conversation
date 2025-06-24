@@ -1,0 +1,72 @@
+
+.quality-of-marg-section {
+    .heading{
+        font-family: "Caveat", cursive;
+        font-size: 60px;
+        margin: 2rem 0 0 6rem;
+    }
+    .container {
+        display: flex;
+        padding: 2rem 6rem;
+        overflow: hidden;
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 4rem;
+
+            .cards-wrapper {
+                width: 100%;
+
+                .card {
+                    display: flex;
+                    align-items: center;
+                    background-color: #F3EBEB;
+                    height: 150px;
+                    margin-bottom: 2rem;
+                    padding: 1rem;
+                    gap: 1rem;
+                    .card-left{
+                        width: 10%;
+                    }
+                    .card-right{
+                         width: 90%;
+                    }
+                    img{
+                        width: 60px;
+                    }
+
+                    h1 {
+                        font-family: Playfair Display;
+                        font-weight: 400;
+                        font-size: 35px;
+                        line-height: 120%;
+                        letter-spacing: 0%;
+                        text-transform: capitalize;
+                        color: #111111;
+                        margin-bottom: 10px;
+
+                    }
+
+                    p {
+                        color: #555555;
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 600px;
+            }
+        }
+    }
+}

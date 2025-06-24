@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+//  font-family: "Josefin Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+// font-family: "Red Hat Display", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+// font-family: "Playfair Display", serif;
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+// font-family: "Caveat", cursive;
+.banner-container-wrapper {
+    padding: 2rem 8rem;
+    .banner{
+        height: 60vh;
+    }
+
+    img {
+        z-index: 1;
+    }
+
+    .heading {
+        font-family: 'Dancing Script', cursive;
+        font-size: 6rem;
+        color: #333;
+        margin-bottom: 1rem;
+        position: absolute;
+        z-index: 999;
+        top: 6rem;
+        // margin-top: 6rem;
+    }
+
+    h3 {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 180%;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin-top: 17rem;
+        color: #555555;
+    }
+
+    .veritical-heading {
+        font-family: Roboto;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 100%;
+        letter-spacing: 9%;
+        text-align: center;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        position: absolute;
+        z-index: 999;
+        color: #F3EBEB;
+        right: 1.6rem;
+        bottom: 19rem;
+    }
+
+    p {
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: 5px;
+        color: #555555;
+        margin-top: 1rem;
+        width: 550px;
+    }
+
+    button {
+        background-color: #A0728D;
+        border: none;
+        // border-bottom: 2px solid black;
+        margin-top: 2rem;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 180%;
+        letter-spacing: 2%;
+        cursor: pointer;
+        color: white;
+        padding: 4px 60px;
+        border-radius: 7px;
+    }
+}
