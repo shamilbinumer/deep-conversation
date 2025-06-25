@@ -35,22 +35,26 @@ const QuestianSection = () => {
             <section className="section">
                 <div className="main-sqare">
                     <div className="left">
-                        <img 
-                            src="/Images/about-banner.svg" 
-                            alt="" 
+                        <img
+                            src="/Images/about-banner.svg"
+                            alt=""
                             className={isVisible ? 'animate-height' : ''}
                         />
                     </div>
-                    <div className="right">
-                        <div className='quastian-tag'   data-aos="fade-left"
+                    <div className="right" >
+                        <div className='quastian-tag'>Questian</div>
+                        <h1 className="questian"  data-aos="fade-left"
                             data-aos-duration="1200"
-                            data-aos-delay="200">Questian</div>
-                        <h1 className="questian">Which is the most important relationship that affects every other aspect of our life?</h1>
-                        <div className="ansewer-section">
+                            data-aos-delay="200">Which is the most important relationship that affects every other aspect of our life?</h1>
+                        <div className="ansewer-section"  data-aos="fade-left"
+                            data-aos-duration="1200"
+                            data-aos-delay="200">
                             <span className="label">Answer :</span>
                             <div className="answer">Our Marriage Relatiosnhip</div>
                         </div>
-                        <div className="explanation-conatiner">
+                        <div className="explanation-conatiner"  data-aos="fade-left"
+                            data-aos-duration="1200"
+                            data-aos-delay="200">
                             <div className="explanation-item">
                                 <strong>Emotional Foundation</strong> Marriage provides the primary emotional support system for most adults. Your spouse becomes your closest confidant, affecting your mental health, stress levels, and overall emotional well-being. A strong marriage creates emotional stability that radiates into all other areas of life.
                             </div>
@@ -60,7 +64,7 @@ const QuestianSection = () => {
                             </div>
                             <div className="explanation-item">
                                 <strong>Financial Partnership</strong>
-                               Marriage typically involves merged finances, shared financial goals, and joint decision-making about money. This financial partnership affects your ability to pursue education, career opportunities, home ownership, and retirement planning.
+                                Marriage typically involves merged finances, shared financial goals, and joint decision-making about money. This financial partnership affects your ability to pursue education, career opportunities, home ownership, and retirement planning.
                             </div>
                         </div>
                     </div>

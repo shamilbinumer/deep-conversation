@@ -1,0 +1,76 @@
+.AboutMeMainWrapper {
+    .section {
+        padding: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left {
+            img {
+                height: 700px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-family: Playfair Display;
+                font-size: 50px;
+            }
+
+            p {
+                font-family: "Red Hat Display", sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                color: #7AB3B3;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .intro {
+                font-family: "Red Hat Display", sans-serif;
+                width: 70%;
+                font-size: 15px;
+                font-weight: 300;
+                color: #808080;
+                margin-top: 1rem;
+                line-height: 25px;
+            }
+
+            button {
+                background-color: #7AB3B3;
+                color: white;
+                font-family: "Red Hat Display", sans-serif;
+                margin-top: 30px;
+                font-size: 20px;
+                padding: 7px 30px;
+            }
+        }
+        @media(max-width:576px) {
+        padding: 1rem;
+
+        .left,
+        .right {
+            width: 100%;
+            img{
+                height: auto;
+                display: inline;
+                width: 100%;
+            }
+        }
+
+    }
+    }
+
+    
+}

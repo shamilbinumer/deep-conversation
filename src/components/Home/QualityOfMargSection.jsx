@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../styles/Home/QualityOfMargSection.scss'
+import React from 'react';
+import '../../styles/Home/QualityOfMargSection.scss';
 
 const QualityOfMargSection = () => {
   return (

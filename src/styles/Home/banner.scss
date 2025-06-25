@@ -1,84 +1,423 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-//  font-family: "Josefin Sans", sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-// font-family: "Red Hat Display", sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-// font-family: "Playfair Display", serif;
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-// font-family: "Caveat", cursive;
+
 .banner-container-wrapper {
     padding: 2rem 8rem;
-    .banner{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+    // Large screens (desktops)
+    @media (max-width: 1440px) {
+        padding: 2rem 6rem;
+    }
+    
+    // Medium-large screens
+    @media (max-width: 1200px) {
+        padding: 2rem 4rem;
+    }
+    
+    // Medium screens (tablets landscape)
+    @media (max-width: 992px) {
+        padding: 2rem 3rem;
+    }
+    
+    // Small-medium screens (tablets portrait)
+    @media (max-width: 768px) {
+        padding: 2rem 2rem;
+        min-height: auto;
+    }
+    
+    // Small screens (mobile)
+    @media (max-width: 576px) {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .banner {
         height: 60vh;
-    }
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+        
+        // Mobile layout changes
+        @media (max-width: 768px) {
+            height: auto;
+            min-height: auto;
+            flex-direction: column;
+            padding: 2rem 0;
+            gap: 2rem;
+        }
+        
+        @media (max-width: 576px) {
+            padding: 1rem 0;
+            gap: 1.5rem;
+        }
 
-    img {
-        z-index: 1;
-    }
+        .content-section {
+            flex: 1;
+            z-index: 10;
+            padding-top: 10rem;
+            
+            @media (max-width: 768px) {
+                text-align: center;
+                order: 2;
+                width: 100%;
+            }
+        }
 
-    .heading {
-        font-family: 'Dancing Script', cursive;
-        font-size: 6rem;
-        color: #333;
-        margin-bottom: 1rem;
-        position: absolute;
-        z-index: 999;
-        top: 6rem;
-        // margin-top: 6rem;
-    }
+        .image-section {
+            position: absolute;
+            top: -2rem;
+            right: 9rem;
+            z-index: 1;
+            
+            @media (max-width: 1440px) {
+                right: 12rem;
+            }
+            
+            @media (max-width: 1200px) {
+                right: 8rem;
+            }
+            
+            @media (max-width: 992px) {
+                right: 4rem;
+            }
+            
+            @media (max-width: 768px) {
+                position: relative;
+                right: auto;
+                top: auto;
+                order: 1;
+                text-align: center;
+                width: 100%;
+                display: none;
+            }
+        }
 
-    h3 {
-        font-family: "Red Hat Display", sans-serif;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 180%;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-        margin-top: 17rem;
-        color: #555555;
-    }
+        .banner-image {
+            width: 500px;
+            height: auto;
+            object-fit: contain;    
+            
+            @media (max-width: 1440px) {
+                width: 450px;
+            }
+            
+            @media (max-width: 1200px) {
+                width: 400px;
+            }
+            
+            @media (max-width: 992px) {
+                width: 350px;
+            }
+            
+            @media (max-width: 768px) {
+                width: 300px;
+                max-width: 80%;
+            }
+            
+            @media (max-width: 576px) {
+                width: 250px;
+                max-width: 90%;
+            }
+            
+            @media (max-width: 480px) {
+                width: 200px;
+                max-width: 95%;
+            }
+        }
 
-    .veritical-heading {
-        font-family: Roboto;
-        font-weight: 900;
-        font-size: 90px;
-        line-height: 100%;
-        letter-spacing: 9%;
-        text-align: center;
-        text-transform: uppercase;
-        transform: rotate(-90deg);
-        position: absolute;
-        z-index: 999;
-        color: #F3EBEB;
-        right: 1.6rem;
-        bottom: 19rem;
-    }
+        .heading {
+            font-family: 'Dancing Script', cursive;
+            font-size: 6rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            margin-top: 0;
+            
+            @media (max-width: 1440px) {
+                font-size: 5.5rem;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 5rem;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 4.5rem;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 4rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            
+            @media (max-width: 480px) {
+                font-size: 2.5rem;
+            }
+            
+            @media (max-width: 360px) {
+                font-size: 2rem;
+            }
+        }
 
-    p {
-        font-family: "Red Hat Display", sans-serif;
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 50px;
-        letter-spacing: 5px;
-        color: #555555;
-        margin-top: 1rem;
-        width: 550px;
-    }
+        .subtitle {
+            font-family: "Red Hat Display", sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 180%;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: #555555;
+            margin: 1rem 0;
+            
+            
+            @media (max-width: 1440px) {
+                font-size: 22px;
+                letter-spacing: 8px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 20px;
+                letter-spacing: 6px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 18px;
+                letter-spacing: 5px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 16px;
+                letter-spacing: 4px;
+                margin: 1.5rem 0;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 14px;
+                letter-spacing: 3px;
+                margin: 1rem 0;
+            }
+            
+            @media (max-width: 480px) {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            
+            @media (max-width: 360px) {
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+        }
 
-    button {
-        background-color: #A0728D;
-        border: none;
-        // border-bottom: 2px solid black;
-        margin-top: 2rem;
-        font-family: "Josefin Sans", sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 180%;
-        letter-spacing: 2%;
-        cursor: pointer;
-        color: white;
-        padding: 4px 60px;
-        border-radius: 7px;
+        .description {
+            font-family: "Red Hat Display", sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: 5px;
+            color: #555555;
+            margin: 1rem 0;
+            max-width: 550px;
+            
+            @media (max-width: 1440px) {
+                font-size: 45px;
+                line-height: 45px;
+                max-width: 500px;
+                letter-spacing: 4px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 40px;
+                line-height: 40px;
+                max-width: 450px;
+                letter-spacing: 3px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 35px;
+                line-height: 35px;
+                max-width: 400px;
+                letter-spacing: 2px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 30px;
+                line-height: 32px;
+                max-width: 100%;
+                letter-spacing: 1px;
+                margin: 1.5rem auto;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 24px;
+                line-height: 26px;
+                letter-spacing: 0.5px;
+                margin: 1rem auto;
+            }
+            
+            @media (max-width: 480px) {
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 0px;
+            }
+            
+            @media (max-width: 360px) {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+
+        .button-container {
+            margin-top: 2rem;
+            
+            @media (max-width: 768px) {
+                margin-top: 1.5rem;
+            }
+            
+            @media (max-width: 576px) {
+                margin-top: 1rem;
+            }
+        }
+
+        .services-btn {
+            background-color: #A0728D;
+            border: none;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 180%;
+            letter-spacing: 2%;
+            cursor: pointer;
+            color: white;
+            padding: 4px 60px;
+            border-radius: 7px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: #8f6580;
+                transform: translateY(-2px);
+            }
+            
+            &:active {
+                transform: translateY(0);
+            }
+            
+            @media (max-width: 1440px) {
+                font-size: 22px;
+                padding: 4px 55px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 20px;
+                padding: 4px 50px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 18px;
+                padding: 4px 45px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 16px;
+                padding: 8px 40px;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 14px;
+                padding: 10px 35px;
+            }
+            
+            @media (max-width: 480px) {
+                font-size: 12px;
+                padding: 10px 30px;
+            }
+            
+            @media (max-width: 360px) {
+                font-size: 11px;
+                padding: 8px 25px;
+            }
+        }
+
+        .vertical-heading {
+            font-family: Roboto;
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 100%;
+            letter-spacing: 9%;
+            text-align: center;
+            text-transform: uppercase;
+            transform: rotate(-90deg);
+            position: absolute;
+            z-index: 999;
+            color: #F3EBEB;
+            right: -3rem;
+            bottom:11rem;
+            white-space: nowrap;
+            
+            @media (max-width: 1440px) {
+                font-size: 80px;
+                right: 1.2rem;
+                bottom: 17rem;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 70px;
+                right: 1rem;
+                bottom: 15rem;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 60px;
+                right: 0.8rem;
+                bottom: 13rem;
+            }
+            
+            @media (max-width: 768px) {
+                display: none; // Hide on mobile for better layout
+            }
+        }
+    }
+    @media(max-width:991px){
+        .banner{
+            height: 80vh;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.505),rgba(255, 255, 255, 0.505)), url('/Images/banner-image.svg');
+            background-size: cover;
+            padding-top: 40%;
+        }
+    }
+}
+
+// Additional mobile-first optimizations
+@media (max-width: 480px) {
+    .banner-container-wrapper {
+        .banner {
+            .content-section {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+}
+
+// Extra small screens
+@media (max-width: 360px) {
+    .banner-container-wrapper {
+        padding: 0.5rem;
+        
+        .banner {
+            .content-section {
+                padding: 0;
+            }
+        }
     }
 }

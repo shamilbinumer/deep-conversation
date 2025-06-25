@@ -24,7 +24,9 @@ const Navbar = () => {
       className={`w-full transition-all duration-300 ease-in-out ${
         isScrolled 
           ? 'bg-white shadow-md backdrop-blur-md' 
-          : 'bg-transparent'
+          : isMobileMenuOpen 
+            ? 'bg-white shadow-md' 
+            : 'bg-transparent'
       }`}
       style={{ position: 'fixed', top: 0, zIndex: 99999999999 }}
     >
