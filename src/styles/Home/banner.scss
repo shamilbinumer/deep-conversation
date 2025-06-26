@@ -73,7 +73,7 @@
         .image-section {
             position: absolute;
             top: -2rem;
-            right: 9rem;
+            right: 4rem;
             z-index: 1;
             
             @media (max-width: 1440px) {
@@ -361,8 +361,8 @@
             position: absolute;
             z-index: 999;
             color: #F3EBEB;
-            right: -3rem;
-            bottom:11rem;
+            right: -8rem;
+            bottom:9rem;
             white-space: nowrap;
             
             @media (max-width: 1440px) {

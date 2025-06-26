@@ -10,7 +10,7 @@ const Banner = () => {
           <h3 className='subtitle'>DEEP CONVERSATION</h3>
           <p className='description'>A healthy marriage is a never-ending conversation.</p>
           <div className="button-container">
-            <button className='services-btn'>Services</button>
+            <a href="#services"><button className='services-btn'>Services</button></a>
           </div>
         </div>
         
@@ -19,13 +19,13 @@ const Banner = () => {
             src="/Images/banner-image.svg" 
             className='banner-image' 
             alt="Banner illustration" 
-            data-aos="fade-in"
-            data-aos-duration="1200"
-            data-aos-delay="200" 
+            // data-aos="fade-in"
+            // data-aos-duration="1200"
+            // data-aos-delay="200" 
           />
         </div>
         
-        <h1 className="vertical-heading">happiness</h1>
+        <h1 className="vertical-heading" data-aos="fade-down">happiness</h1>
       </div>
     </div>
   )

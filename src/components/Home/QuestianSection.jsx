@@ -43,16 +43,16 @@ const QuestianSection = () => {
                     </div>
                     <div className="right" >
                         <div className='quastian-tag'>Questian</div>
-                        <h1 className="questian"  data-aos="fade-left"
+                        <h1 className="questian"  data-aos="fade-up"
                             data-aos-duration="1200"
                             data-aos-delay="200">Which is the most important relationship that affects every other aspect of our life?</h1>
-                        <div className="ansewer-section"  data-aos="fade-left"
+                        <div className="ansewer-section"  data-aos="fade-up"
                             data-aos-duration="1200"
                             data-aos-delay="200">
                             <span className="label">Answer :</span>
                             <div className="answer">Our Marriage Relatiosnhip</div>
                         </div>
-                        <div className="explanation-conatiner"  data-aos="fade-left"
+                        <div className="explanation-conatiner"  data-aos="fade-up"
                             data-aos-duration="1200"
                             data-aos-delay="200">
                             <div className="explanation-item">
